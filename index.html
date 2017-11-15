@@ -1,9 +1,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <link rel="stylesheet" href="styles.css">
-<canvas width="300" height="300"></canvas>
-<textarea id="instructions" cols="80" rows="19"></textarea>
-<input type="button" id="submit" value="submit"></input>
-<input type="button" id="reset" value="reset"></input>
+
+
+<canvas width="300" height="300" id="l"></canvas>
+
+<div id="r">
+  <span id="directions">
+    Commands: <br>
+    <ul>
+      <li>Move [Distance]</li>
+      <li>Rotate [Degrees]</li>
+      <li>Down</li>
+      <li>Up</li>
+      <li>Color [Color]</li>
+      <li>Width [Size]</li>
+    </ul>
+  </span>
+  <textarea id="instructions" width="100%"></textarea>
+
+  <br>
+  <input type="button" id="submit" value="Run"></input>
+</div>
+
 
 
 <script src="turtle.js"></script>

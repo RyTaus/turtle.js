@@ -60,6 +60,9 @@ class Turtle {
     this.ctx.lineWidth = '2'
     this.ctx.lineCap = 'round'
     this.ctx.fillStyle = 'white';
+    this.ctx.fillRect(0, 0, canvas.width, canvas.height);
+    this.ctx.strokeStyle = 'black';
+
   }
 
   drawTurtle() {
@@ -103,20 +106,11 @@ class Turtle {
   }
 }
 
-
-
 let turtle = new Turtle(document.querySelector('canvas'));
-
-let instructions = 'Down; Move 40; Rotate 90; Move 70; Up'
-
 
 $('#submit').on('click', () => {
   turtle = new Turtle(document.querySelector('canvas'));
   turtle.perform(parseInstructions($('#instructions').val()));
   // turtle.drawTurtle();
 
-});
-
-$('#reset').on('click', () => {
-  turtle = new Turtle(document.querySelector('canvas'));
 });

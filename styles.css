@@ -4,9 +4,51 @@ canvas {
   height: 90%;
 }
 
-textarea {
-  border: 1px solid black;
-  background-color: lightgrey;
+span {
+  /*background-color: lightgrey;*/
+}
+
+ul {
   width: 25%;
-  height: 80%;
+  margin-left: 5px;
+  padding-left: 5px;
+  list-style: none;
+  list-style-position: outside;
+  float: right;
+}
+
+body {
+  background-color: lightgrey;
+
+}
+
+#instructions {
+  border: 1px solid black;
+  /*background-color: lightgrey;*/
+  height: 95%;
+  width: 29%;
+  resize: None;
+  margin-left: 5px;
+  /*text-align: center;*/
+
+}
+
+#directions {
+  /*height: 25%;*/
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+#r {
+  height: 70%;
+  margin: 2px;
+}
+
+#l {
+  float: left;
+}
+
+input {
+  margin-left: 5px;
+  width: 29%
 }
